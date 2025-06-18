@@ -145,7 +145,7 @@ The script fetches the HTML content of the published Google Slides URL. It then 
 ------------
 
 ### License
-This project is open source and available under the [MIT License]. 
+This project is open source and available under the [MIT License](https://github.com/Mast3r0mid/Google-Slides-Loop-Player/blob/main/LICENSE). 
 
 ------------
 
