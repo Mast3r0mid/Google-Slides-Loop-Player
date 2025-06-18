@@ -1,14 +1,14 @@
-##Google Slides Loop Player(digital signage player)
+## Google Slides Loop Player(digital signage player)
 
 
-###A Lightweight, Browser-Based Solution for Cycling Through Google Slides Presentations
+### A Lightweight, Browser-Based Solution for Cycling Through Google Slides Presentations
 
 
 ------------
 
 
 
-###What is This?
+### What is This?
 
 This project provides a simple, open-source HTML and JavaScript application designed to display a sequence of Google Slides presentations in a continuous loop. Think of it as a custom digital signage player specifically optimized for Google Slides content.
 
@@ -17,7 +17,7 @@ Instead of relying on proprietary digital signage platforms (like TrilbyTV) that
 ------------
 
 
-#####It's ideal for:
+##### It's ideal for:
 
 Displaying rotating announcements or information on a screen in a reception area, classroom, or office.
 Creating a simple kiosk display.
@@ -28,7 +28,7 @@ Anyone who needs a straightforward way to cycle through multiple Google Slides p
 
 
 
-#####How Does it Work?
+##### How Does it Work?
 You provide a list of Google Slides "published to the web" URLs, and the application does the rest:
 
 It loads the first presentation.
@@ -40,7 +40,7 @@ When it reaches the end of the list, it loops back to the beginning, creating a 
 ------------
 
 
-#####Key Features
+##### Key Features
 
 - Google Slides Focused: Specifically designed to play publicly shared Google Slides presentations.
 - Automatic Looping: Seamlessly cycles through a predefined list of presentations.
@@ -49,7 +49,7 @@ When it reaches the end of the list, it loops back to the beginning, creating a 
 - No Licensing Costs: Completely free and open-source.
 - Cross-Platform: Works on any device with a modern web browser (Windows, macOS, Linux, Raspberry Pi, Android, smart TVs with web browsers).
 
-#####Why Use This Instead of Other Signage Apps (like TrilbyTV)?
+##### Why Use This Instead of Other Signage Apps (like TrilbyTV)?
 - Cost-Effective: Zero software costs. Leverage your existing Google Slides content without additional subscriptions.
 - Simplicity: No complex dashboard, content management system, or network setup to configure. Just edit a single HTML file.
 - Direct Google Slides Integration: Optimized for how Google Slides publishes presentations, including loop and delay settings.
@@ -62,7 +62,7 @@ When it reaches the end of the list, it loops back to the beginning, creating a 
 ------------
 
 
-###Getting Started
+### Getting Started
 1.  Download the ZIP file directly from the GitHub repository page.
 
 2. Configure Your Google Slides URLs :
@@ -100,10 +100,10 @@ const presentations = [
 3. Run the Application
 - Simply open the index.html file in your web browser.
 
-####Important Note for Local File Access:
+#### Important Note for Local File Access:
 Modern browsers have security restrictions that can limit JavaScript's ability to fetch content from file:// URLs (CORS policy) .  If you experience issues with the automatic slide counting or transitions, it's recommended to run the application using a simple local web server.
 
-####Running with a Local Web Server (Recommended)
+#### Running with a Local Web Server (Recommended)
 This ensures all features work correctly and simulates a real web environment.
 
  - Using Python's Simple HTTP Server (if Python is installed)
@@ -127,7 +127,7 @@ python -m http.server 8000
 
 
 
-####How the Slide Counting Works (Technical Detail)
+#### How the Slide Counting Works (Technical Detail)
 The script fetches the HTML content of the published Google Slides URL. It then searches for a specific JavaScript variable that Google includes in its published slide content: SK_modelChunkParseStart. The number of times this variable appears indicates the number of "slides" or "chunks" Google Slides prepares. This count is then multiplied by the duration (which includes your delayms) to determine the total display time for that specific presentation before moving to the next one. This ensures that even if you have many slides, the player waits for them all to cycle through.
 
 
@@ -137,14 +137,14 @@ The script fetches the HTML content of the published Google Slides URL. It then 
 ------------
 
 
-####Open an issue for bugs or suggestions.
+#### Open an issue for bugs or suggestions.
 
 ------------
 
 
 ------------
 
-###License
+### License
 This project is open source and available under the [MIT License]. 
 
 ------------
