@@ -73,8 +73,8 @@ When it reaches the end of the list, it loops back to the beginning, creating a 
 - Check "Start slideshow as soon as the player loads" (start=true).
 - Check "Restart slideshow after the last slide" (loop=true).
 - Copy the src URL from the generated "< iframe >" code. It will look something like: `https://docs.google.com/presentation/d/e/2PACX-1v.../pubembed?start=true&loop=true&delayms=5000`
-- Edit index.html:
-Open the index.html file in a text editor. Locate the presentations array within the "< script >" tags:
+- Edit Player.html:
+Open the Player.html file in a text editor. Locate the presentations array within the "< script >" tags:
 
 ```javascript
 JavaScript
@@ -98,7 +98,7 @@ const presentations = [
 
 
 3. Run the Application
-- Simply open the index.html file in your web browser.
+- Simply open the Player.html file in your web browser.
 
 #### Important Note for Local File Access:
 Modern browsers have security restrictions that can limit JavaScript's ability to fetch content from file:// URLs (CORS policy) .  If you experience issues with the automatic slide counting or transitions, it's recommended to run the application using a simple local web server.
@@ -108,7 +108,7 @@ This ensures all features work correctly and simulates a real web environment.
 
  - Using Python's Simple HTTP Server (if Python is installed)
 1. Open your terminal or command prompt.
-2. Navigate to your project directory (where index.html is located).
+2. Navigate to your project directory (where Player.html is located).
 3. Run the command:
 `
 python -m http.server 8000
