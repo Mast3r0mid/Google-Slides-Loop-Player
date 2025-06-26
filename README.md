@@ -10,7 +10,7 @@
 
 ### What is This?
 
-This project provides a simple, open-source HTML and JavaScript application designed to display a sequence of Google Slides presentations in a continuous loop. Think of it as a custom digital signage player specifically optimized for Google Slides content.
+This project provides a simple, open-source PHP and JavaScript application designed to display a sequence of Google Slides presentations in a continuous loop. Think of it as a custom digital signage player specifically optimized for Google Slides content.
 
 Instead of relying on proprietary digital signage platforms (like TrilbyTV) that might have complex setups, licensing costs, or specific hardware requirements, this solution runs directly in a web browser. 
 
@@ -99,7 +99,7 @@ const presentations = [
 ];
 ```
 
- ii- If you are using php server:
+ ii- If you are using php server :
  
  Go to Login page in a WebBrowser. Edit the presentations list
 
@@ -109,7 +109,7 @@ const presentations = [
 #### Important Note for Local File Access:
 Modern browsers have security restrictions that can limit JavaScript's ability to fetch content from file:// URLs (CORS policy) .  If you experience issues with the automatic slide counting or transitions, it's recommended to run the application using a simple local web server.
 
-#### Running with a Local Web Server (Recommended)
+#### Running with a Local Web Server
 This ensures all features work correctly and simulates a real web environment.
 
  - Using Python's Simple HTTP Server (if Python is installed)
@@ -117,12 +117,12 @@ This ensures all features work correctly and simulates a real web environment.
 2. Navigate to your project directory (where Player.html is located).
 3. Run the command:
 `
-python -m http.server 8000
+python -m http.server 8080
 `
 -  For Python 2:
- `python -m SimpleHTTPServer 8000`
+ `python -m SimpleHTTPServer 8080`
 
- - Using PHP server
+ - Using PHP server (Recommended)
    
 `
 php.exe -S 127.0.0.1:8080 -t ROOT_DIRECTORY
