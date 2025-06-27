@@ -74,10 +74,16 @@ When it reaches the end of the list, it loops back to the beginning, creating a 
 - Check "Restart slideshow after the last slide" (loop=true).
 - Copy the src URL from the generated "< iframe >" code. It will look something like: `https://docs.google.com/presentation/d/e/2PACX-1v.../pubembed?start=true&loop=true&delayms=5000`
 - Edit Presentaion list:
-  
-  i-  if you are useing python simple HTTP server:
 
-  Edit Player.html: Open the Player.html file in a text editor. Locate the presentations array within the "< script >" tags:
+
+  i- If you are using php server :
+ 
+   Go to Login Page and use the Editor(default Username/Pass: admin )
+  
+  
+  ii-  if you are useing python simple HTTP server:
+
+   Edit Player.html: Open the Player.html file in a text editor. Locate the presentations array within the "< script >" tags:
 
 ```javascript
 JavaScript
@@ -98,10 +104,6 @@ const presentations = [
     // Add more presentations by copying and pasting the structure above
 ];
 ```
-
- ii- If you are using php server :
- 
- Go to Login page in a WebBrowser. Edit the presentations list
 
 3. Run the Application
 - Simply open the Player.html file in your web browser.
