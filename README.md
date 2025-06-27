@@ -8,7 +8,7 @@
 
 
 
-### What is This?
+### What is This? [Google Slide Loop Player](https://github.com/Mast3r0mid/Google-Slides-Loop-Player)
 
 This project provides a simple, open-source PHP and JavaScript application designed to display a sequence of Google Slides presentations in a continuous loop. Think of it as a custom digital signage player specifically optimized for Google Slides content.
 
